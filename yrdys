@@ -1,0 +1,22 @@
+if (isset($_POST['edit'])){
+    if(check_date_format($_POST['date_taken'])==true and !empty($_POST['location_name']) and strlen($_POST['description'])<=300){
+        //start sanitizing input
+         $date_taken=filter_input( INPUT_POST, 'date_taken', FILTER_SANITIZE_SPECIAL_CHARS);
+        $tag=filter_input( INPUT_POST, 'tag', FILTER_SANITIZE_SPECIAL_CHARS);
+        $description=filter_input( INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS);
+        $location_name=filter_input( INPUT_POST, 'location_name', FILTER_SANITIZE_SPECIAL_CHARS);
+        //update database.
+        $query="UPDATE Photos SET date_taken='$date_taken', location_name='$location_name', tag='$tag', description='$description' WHERE photoID='$photoID'";
+        $update_photo=$mysqli->query($query);
+        if($mysqli->query($query)==TRUE){
+            print "<p>Record Updated!</p>";
+        }
+        else{
+            print "<p>Error updating record!</p>";
+        }
+}
+    
+    else{
+        print "<p class='error'>Please check your input!</p>";
+    }
+}

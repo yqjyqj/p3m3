@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*global setting*/
+body {
+    font-family: sans-serif;
+    width: 1000px;
+    margin: auto;
+    background-image: url(../images/ravenna_@2X.png);
+    font-size: 22px;
+}
+
+a:hover {
+    text-decoration: none;
+    border-bottom: solid 3px #ffc0cb;
+    transition: .3s;
+
+}
+
+
+
+.banner {
+    width: 1000px;
+}
+
+.banner img {
+    width: 1000px;
+    opacity: .9;
+}
+
+.banner h1 {
+    margin-top: 1em;
+    font-size: 200%;
+    text-align: left;
+}
+
+.banner p {
+    border-top-style: double;
+    border-top-color: #848484;
+    font-size: 100%;
+    padding-top: 1em;
+    text-align: left;
+}
+.buttons button{
+    padding-top:2em;
+    padding-bottom: 1em;
+    border: none;
+    background: none;
+    border-bottom: 2px;
+    border-color: #8B008B;
+
+}
+.description {
+    background-color: #fff;
+    
+    margin-left:auto;
+    border-style: solid;
+    border-color: #DEDEDE;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 1em;
+}
+.description h3{
+    text-align: center;
+}
+.description img{
+    margin-left:  30%;
+}
+.description p{
+    text-align: center;
+}
+.box{
+    text-align: center;
+    margin:1em;
+    padding:2em;
+    border: 0.5em solid #DEDEDE; 
+}
+.error{
+    font-size: 10px;
+    color: #8B008B;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;padding: 0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-color: #8b008b;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;border-color: #8b008b;overflow:hidden;word-break:normal;}
+.tg .tg-733k{font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important; font-weight: bold;}
+.tg .tg-yw4l{vertical-align:top;}
+
+
+.error{
+    color: #8B008B;
+}
+
+
+.footer {
+    margin-top: 3em;
+    clear: both;
+}
+
+.sizing {
+    width: 150px;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
